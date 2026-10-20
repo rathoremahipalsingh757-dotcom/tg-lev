@@ -47,6 +47,15 @@ class PaymentoIPNServer:
         wake_event = self._wake_event
 
         class RequestHandler(BaseHTTPRequestHandler):
+            def _send_health_response(self, include_body: bool) -> None:
+                response = b"ok"
+                self.send_response(200)
+                self.send_header("Content-Type", "text/plain; charset=utf-8")
+                self.send_header("Content-Length", str(len(response)))
+                self.end_headers()
+                if include_body:
+                    self.wfile.write(response)
+
             def do_POST(self) -> None:
                 if self.path != expected_path:
                     self.send_error(404)
@@ -112,12 +121,13 @@ class PaymentoIPNServer:
 
             def do_GET(self) -> None:
                 if self.path == "/health":
-                    response = b"ok"
-                    self.send_response(200)
-                    self.send_header("Content-Type", "text/plain; charset=utf-8")
-                    self.send_header("Content-Length", str(len(response)))
-                    self.end_headers()
-                    self.wfile.write(response)
+                    self._send_health_response(include_body=True)
+                    return
+                self.send_error(404)
+
+            def do_HEAD(self) -> None:
+                if self.path == "/health":
+                    self._send_health_response(include_body=False)
                     return
                 self.send_error(404)
 
