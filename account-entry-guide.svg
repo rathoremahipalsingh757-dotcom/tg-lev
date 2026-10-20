@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">Shop inventory account entry guide</title>
+  <desc id="description">Example of where to enter one inventory item in the Stock worksheet. All account details shown are placeholders.</desc>
+  <rect width="1200" height="620" fill="#f4f7fb"/>
+  <rect x="32" y="28" width="1136" height="564" rx="20" fill="#ffffff" stroke="#d8e1ec" stroke-width="2"/>
+  <text x="64" y="78" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172b4d">Add one item per row in the Stock tab</text>
+  <text x="64" y="112" font-family="Arial, sans-serif" font-size="17" fill="#53657d">Keep row 1 (headings) unchanged. This example uses placeholders only.</text>
+
+  <rect x="64" y="145" width="1072" height="42" rx="7" fill="#eaf0f7"/>
+  <text x="82" y="173" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#53657d">ROW</text>
+  <text x="155" y="173" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#53657d">A - Category</text>
+  <text x="310" y="173" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#53657d">B - Account_Details</text>
+  <text x="650" y="173" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#53657d">C - Price_USD</text>
+  <text x="810" y="173" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#53657d">D - Status</text>
+  <text x="965" y="173" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#53657d">E-J - Leave blank</text>
+  <path d="M140 145v245 M295 145v245 M635 145v245 M795 145v245 M950 145v245" stroke="#d8e1ec" stroke-width="2"/>
+
+  <rect x="64" y="187" width="1072" height="60" fill="#ffffff" stroke="#d8e1ec"/>
+  <text x="88" y="223" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">1</text>
+  <text x="155" y="223" font-family="Arial, sans-serif" font-size="15" fill="#172b4d">Category</text>
+  <text x="310" y="223" font-family="Arial, sans-serif" font-size="15" fill="#172b4d">Account_Details</text>
+  <text x="650" y="223" font-family="Arial, sans-serif" font-size="15" fill="#172b4d">Price_USD</text>
+  <text x="810" y="223" font-family="Arial, sans-serif" font-size="15" fill="#172b4d">Status</text>
+  <text x="965" y="223" font-family="Arial, sans-serif" font-size="15" fill="#7b8798">Bot-managed</text>
+
+  <rect x="64" y="247" width="1072" height="60" fill="#fff8e6" stroke="#ead9a6"/>
+  <text x="88" y="283" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">2</text>
+  <text x="155" y="283" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#8a6514">TEST ONLY</text>
+  <text x="310" y="283" font-family="Arial, sans-serif" font-size="15" fill="#8a6514">Fake placeholder - do not sell</text>
+  <text x="650" y="283" font-family="Arial, sans-serif" font-size="15" fill="#8a6514">-</text>
+  <text x="810" y="283" font-family="Arial, sans-serif" font-size="15" fill="#8a6514">TEST ONLY</text>
+  <text x="965" y="283" font-family="Arial, sans-serif" font-size="15" fill="#8a6514">Leave unchanged</text>
+
+  <rect x="64" y="307" width="1072" height="82" fill="#eef9f2" stroke="#9ed4b0" stroke-width="2"/>
+  <text x="88" y="354" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#176b3a">3</text>
+  <text x="155" y="354" font-family="Arial, sans-serif" font-size="16" fill="#176b3a">Instagram</text>
+  <text x="310" y="342" font-family="Arial, sans-serif" font-size="14" fill="#176b3a">Login: YOUR-LOGIN (placeholder)</text>
+  <text x="310" y="365" font-family="Arial, sans-serif" font-size="14" fill="#176b3a">Password: UNIQUE-TEMP-PASSWORD</text>
+  <text x="650" y="354" font-family="Arial, sans-serif" font-size="16" fill="#176b3a">5.00</text>
+  <text x="810" y="354" font-family="Arial, sans-serif" font-size="16" fill="#176b3a">Available</text>
+  <text x="965" y="354" font-family="Arial, sans-serif" font-size="15" fill="#7b8798">Leave blank</text>
+
+  <rect x="64" y="416" width="1072" height="142" rx="12" fill="#fff4f2" stroke="#f0c1b8"/>
+  <text x="88" y="452" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#9d3426">Important before entering real passwords</text>
+  <text x="88" y="484" font-family="Arial, sans-serif" font-size="16" fill="#61352f">• The bot sends the full Account_Details cell to the buyer after payment is confirmed.</text>
+  <text x="88" y="512" font-family="Arial, sans-serif" font-size="16" fill="#61352f">• Payments are not configured yet - use placeholders only for now.</text>
+  <text x="88" y="540" font-family="Arial, sans-serif" font-size="16" fill="#61352f">• Never include recovery codes. Share only what is needed and permitted for a transfer.</text>
+</svg>

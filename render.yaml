@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: sensnova-shop-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    healthCheckPath: /health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: PAYMENTO_API_KEY
+        sync: false
+      - key: PAYMENTO_IPN_SECRET
+        sync: false
+      - key: PAYMENTO_IPN_URL
+        sync: false
+      - key: PAYMENTO_IPN_HOST
+        value: 0.0.0.0
+      - key: GOOGLE_SHEETS_CREDENTIALS_JSON
+        sync: false
+      - key: GOOGLE_SHEET_ID
+        sync: false
+      - key: ADMIN_TELEGRAM_ID
+        sync: false
+      - key: SUPPORT_CONTACT
+        sync: false
+      - key: SUPPORT_CONTACT_2
+        sync: false
+      - key: VOUCHES_URL
+        sync: false
